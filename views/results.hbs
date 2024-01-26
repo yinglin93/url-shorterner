@@ -1,0 +1,15 @@
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-6" style="text-align: center">
+      <h3>Success! Please ues the URL:</h3>
+      <a href="{{shortURL}}" id="shortURL" style="font-size: 24px">{{shortURL}}</a>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-4" style="text-align: center">
+      {{!-- 複製與返回主頁按鈕 --}}
+      <button class="btn btn-link mx-2" title="Copy the URL" onclick="copy()"><i class="fa-solid fa-copy fa-2xl" style="color: #727579;"></i></button>
+      <button class="btn btn-link mx-2" title="Back to Home Page" onclick="location.href='http://localhost:3000'"><i class="fa-solid fa-house fa-2xl" style="color: #727579;"></i></button>
+    </div>
+  </div>
+</div>
