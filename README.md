@@ -11,7 +11,6 @@ This is the web app to shorten your loooong URL
 ## Screenshot
 
 <img width="751" alt="image" src="https://github.com/yinglin93/url-shorterner/assets/152006237/6fcfc574-a831-4f66-ac95-e7cac040bf1f">
-<img width="764" alt="image" src="https://github.com/yinglin93/url-shorterner/assets/152006237/23dd1f29-d10d-41a8-919f-8f178be14b9e">
 
 ## Installing
 
