@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/shorten', (req, res) => {
   const inputedURL = req.query.inputedURL
 
-  if (!inputedURL) {
+  if (!inputedURL || !inputedURL.includes('http://') || !inputedURL.includes('https://')) {
     res.render('err')
     // 若使用者沒有輸入內容，防止表單送出
   } else {
@@ -34,7 +34,7 @@ app.get('/shorten/:id', (req, res) => {
   const url = urls.find((item) => item.id === id)
 
   if (!url) {
-    res.redirect('/')
+    return res.render('err')
   }
 
   res.redirect(url.originalURL)
