@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/shorten', (req, res) => {
   const inputedURL = req.query.inputedURL
 
-  if (!inputedURL || !inputedURL.includes('http://') || !inputedURL.includes('https://')) {
+  if (!inputedURL) {
     res.render('err')
     // 若使用者沒有輸入內容，防止表單送出
   } else {
